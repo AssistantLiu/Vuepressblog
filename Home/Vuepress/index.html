@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress静态文档类建站 | Damogu WorkStation</title>
+    <meta name="generator" content="VuePress 1.7.0">
+    <link rel="icon" href="/vuepressblog/images/m-todo.ico">
+    <meta name="description" content="This is a blog of Damogu">
+    
+    <link rel="preload" href="/vuepressblog/assets/css/0.styles.e3f0a19d.css" as="style"><link rel="preload" href="/vuepressblog/assets/js/app.cc56b176.js" as="script"><link rel="preload" href="/vuepressblog/assets/js/2.4bc8db0f.js" as="script"><link rel="preload" href="/vuepressblog/assets/js/9.51c9d6b2.js" as="script"><link rel="prefetch" href="/vuepressblog/assets/js/10.81eaad4d.js"><link rel="prefetch" href="/vuepressblog/assets/js/11.50899d73.js"><link rel="prefetch" href="/vuepressblog/assets/js/12.e3e953e0.js"><link rel="prefetch" href="/vuepressblog/assets/js/13.f72c0159.js"><link rel="prefetch" href="/vuepressblog/assets/js/14.5f637c07.js"><link rel="prefetch" href="/vuepressblog/assets/js/15.f22397a4.js"><link rel="prefetch" href="/vuepressblog/assets/js/16.c3acba76.js"><link rel="prefetch" href="/vuepressblog/assets/js/17.1814e1b9.js"><link rel="prefetch" href="/vuepressblog/assets/js/18.ec35380e.js"><link rel="prefetch" href="/vuepressblog/assets/js/3.fd2055f7.js"><link rel="prefetch" href="/vuepressblog/assets/js/4.c669a65d.js"><link rel="prefetch" href="/vuepressblog/assets/js/5.8481a9a9.js"><link rel="prefetch" href="/vuepressblog/assets/js/6.39a81eb4.js"><link rel="prefetch" href="/vuepressblog/assets/js/7.db76f04d.js"><link rel="prefetch" href="/vuepressblog/assets/js/8.4dd14e98.js">
+    <link rel="stylesheet" href="/vuepressblog/assets/css/0.styles.e3f0a19d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepressblog/" class="home-link router-link-active"><img src="/vuepressblog/assets/img/barlogo.png" alt="Damogu WorkStation" class="logo"> <span class="site-name can-hide">Damogu WorkStation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepressblog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vuepressblog/Software/" class="nav-link">
+  软件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressblog/Tutorials/windows/" class="nav-link">
+  windwos
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressblog/Tutorials/pcan/" class="nav-link">
+  pcan
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepressblog/Study/" class="nav-link">
+  学习
+</a></div><div class="nav-item"><a href="/vuepressblog/Contact/" class="nav-link">
+  联系
+</a></div><div class="nav-item"><a href="https://blog.csdn.net/qq_33704787" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepressblog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vuepressblog/Software/" class="nav-link">
+  软件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressblog/Tutorials/windows/" class="nav-link">
+  windwos
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressblog/Tutorials/pcan/" class="nav-link">
+  pcan
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepressblog/Study/" class="nav-link">
+  学习
+</a></div><div class="nav-item"><a href="/vuepressblog/Contact/" class="nav-link">
+  联系
+</a></div><div class="nav-item"><a href="https://blog.csdn.net/qq_33704787" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VuePress静态文档类建站</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepressblog/Home/Vuepress/#_1-解决github-io被运营商和谐问题" class="sidebar-link">1 解决github.io被运营商和谐问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_1-1-hosts文件修改" class="sidebar-link">1.1 Hosts文件修改</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_1-2-修改dns" class="sidebar-link">1.2 修改DNS</a></li></ul></li><li><a href="/vuepressblog/Home/Vuepress/#_2-vuepress入门" class="sidebar-link">2 VuePress入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_2-1-环境搭建" class="sidebar-link">2.1 环境搭建：</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_2-2-安装vuepress" class="sidebar-link">2.2 安装Vuepress</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_2-3-创建工程" class="sidebar-link">2.3 创建工程</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_2-4-部署到xxx-github-io" class="sidebar-link">2.4 部署到xxx.github.io</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_2-8-执行脚本部署" class="sidebar-link">2.8 执行脚本部署</a></li></ul></li><li><a href="/vuepressblog/Home/Vuepress/#_3-功能配置" class="sidebar-link">3 功能配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-1-导航栏链接" class="sidebar-link">3.1 导航栏链接</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-2-定制侧边栏配置" class="sidebar-link">3.2 定制侧边栏配置</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-3-最后更新时间" class="sidebar-link">3.3 最后更新时间</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-4-侧边栏显示层级" class="sidebar-link">3.4 侧边栏显示层级</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-5-语言配置" class="sidebar-link">3.5 语言配置</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-6-head标签logo" class="sidebar-link">3.6 Head标签logo</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-7-git仓库和编辑链接" class="sidebar-link">3.7 Git仓库和编辑链接</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-8-代码块显示行号" class="sidebar-link">3.8 代码块显示行号</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_3-9-首页部署" class="sidebar-link">3.9 首页部署</a></li></ul></li><li><a href="/vuepressblog/Home/Vuepress/#_4-makedown相关语法学习" class="sidebar-link">4 Makedown相关语法学习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_4-1-markdown2安装" class="sidebar-link">4.1 Markdown2安装</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_4-2-typota" class="sidebar-link">4.2 Typota</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_4-3-网页版" class="sidebar-link">4.3 网页版</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_4-4-语法教程" class="sidebar-link">4.4 语法教程</a></li></ul></li><li><a href="/vuepressblog/Home/Vuepress/#_5-git相关问题" class="sidebar-link">5 Git相关问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_5-1-工程托管配置" class="sidebar-link">5.1 工程托管配置</a></li><li class="sidebar-sub-header"><a href="/vuepressblog/Home/Vuepress/#_5-2-github-ssh密钥配置" class="sidebar-link">5.2 github ssh密钥配置</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress静态文档类建站"><a href="#vuepress静态文档类建站" class="header-anchor">#</a> VuePress静态文档类建站</h1> <h2 id="_1-解决github-io被运营商和谐问题"><a href="#_1-解决github-io被运营商和谐问题" class="header-anchor">#</a> 1 解决github.io被运营商和谐问题</h2> <p>不解决该问题，当运行发布后无法打开站点查看效果。</p> <p>如果现在的你看不懂，可以从 2 VuePress入门开始看</p> <h3 id="_1-1-hosts文件修改"><a href="#_1-1-hosts文件修改" class="header-anchor">#</a> 1.1 Hosts文件修改</h3> <p>修改该文件可以短时间解决问题，但是根源问题还是存在的</p> <p>该方法只能针对某一ip地址，解决访问问题，但是不能每次都去修改hosts文件吧</p> <p>但是作为调试用，还是可行的。</p> <h4 id="_1-1-1-文件位置"><a href="#_1-1-1-文件位置" class="header-anchor">#</a> 1.1.1 文件位置：</h4> <p><code>C:\Windows\System32\drivers\etc</code></p> <h4 id="_1-1-2-修改原因"><a href="#_1-1-2-修改原因" class="header-anchor">#</a> 1.1.2 修改原因：</h4> <p>无法解析 xxx.github.io</p> <p>例如：assistantliu.github.io</p> <h4 id="_1-1-3-改动内容"><a href="#_1-1-3-改动内容" class="header-anchor">#</a> 1.1.3 改动内容：</h4> <p><code>hosts</code>最后一行加入：ip  xxx.github.io</p> <p>例如：185.199.108.153 assistantliu.github.io</p> <h4 id="_1-1-4-命令行"><a href="#_1-1-4-命令行" class="header-anchor">#</a> 1.1.4 命令行：</h4> <p>修改完<code>hosts</code>后,在<code>powershell</code>输入：Clear-DnsClientCache</p> <h4 id="_1-1-5-查询ip"><a href="#_1-1-5-查询ip" class="header-anchor">#</a> 1.1.5 查询ip:</h4> <p>🔗https://www.ipaddress.com/</p> <p>🔗https://www.ipip.net/ip.html-</p> <h4 id="_1-1-6-管理员权限修改hosts"><a href="#_1-1-6-管理员权限修改hosts" class="header-anchor">#</a> 1.1.6 管理员权限修改Hosts</h4> <p><img src="/images/%E6%9D%83%E9%99%90.gif" alt="权限"></p> <h3 id="_1-2-修改dns"><a href="#_1-2-修改dns" class="header-anchor">#</a> 1.2 修改DNS</h3> <p>现在无法打开 *.http://github.io 原因是电信运营商 DNS 污染（域名指往不正确的IP地址）</p> <p>这次应该是运营商行为。像封某歌是GJ行为。</p> <p>可以通过修改 hosts文件 / 修改DNS服务器 / 代理 的方式访问。</p> <p>可将 DNS 修改为 114.114.114.114，一个良心 DNS 服务商。</p> <p>但大多数访客是不会进行上方操作的。作为站长，还是使用域名为好，服务器不稳定可以方便地更换服务商。</p> <h4 id="_1-2-1-修改ipv4-dns"><a href="#_1-2-1-修改ipv4-dns" class="header-anchor">#</a> 1.2.1 修改ipv4 dns</h4> <p><img src="/images/DNS.png" alt="DNS"></p> <h4 id="_1-2-2-推荐-dns"><a href="#_1-2-2-推荐-dns" class="header-anchor">#</a> 1.2.2 推荐 dns</h4> <ul><li>114.114.114.114</li> <li>223.5.5.5</li> <li>223.6.6.6</li></ul> <h2 id="_2-vuepress入门"><a href="#_2-vuepress入门" class="header-anchor">#</a> 2 VuePress入门</h2> <p>VuePress 是一款使用 Vue 驱动的静态网站生成器，是 Vue 的作者 Evan You 为了方便文档的编写而开发的。</p> <ul><li>默认主题与 Vue 官方文档一致</li> <li>简洁，少配置，高性能</li> <li>Markdown 专为技术文档提供拓展</li> <li>自带 PWA</li> <li>自定义主题，可定制程度完全由自己决定</li></ul> <p>🔗<a href="https://www.vuepress.cn/" target="_blank" rel="noopener noreferrer">VuePress中文网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>🔗<a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">Vuepress<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  个人推荐看这个！</p> <h3 id="_2-1-环境搭建"><a href="#_2-1-环境搭建" class="header-anchor">#</a> 2.1 环境搭建：</h3> <p>git环境： 🔗<a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>nodejs环境：<a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Nodejs官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>yarn环境:<a href="https://yarn.bootcss.com/" target="_blank" rel="noopener noreferrer">yarn官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="custom-block warning"><p class="custom-block-title">前提条件</p> <p>VuePress 需要 <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> &gt;= 8.6</p></div> <h3 id="_2-2-安装vuepress"><a href="#_2-2-安装vuepress" class="header-anchor">#</a> 2.2 安装Vuepress</h3> <p>首先，需要安装vuepress</p> <p>可以选择全局安装或者局部安装：（选一个版本安装即可，使用 yarn 或 npm 都可以）</p> <p>yarn开发环境2.1章节已经提供连接，npm是在nodejs环境安装好后就可以使用</p> <p>两者区别：</p> <p>全局安装，以后所有项目都会直接调用</p> <p>局部安装，只针对当前工程，安装包会下载到当前工程下</p> <h4 id="_2-2-1-全局安装"><a href="#_2-2-1-全局安装" class="header-anchor">#</a> 2.2.1 全局安装</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> -g vuepress <span class="token comment"># npm install -g vuepress</span>
+</code></pre></div><h4 id="_2-2-2-局部安装"><a href="#_2-2-2-局部安装" class="header-anchor">#</a> 2.2.2 局部安装</h4> <p>选择局部安装的直接跳过从2.3开始看</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> -D vuepress <span class="token comment"># npm install -D vuepress</span>
+</code></pre></div><h3 id="_2-3-创建工程"><a href="#_2-3-创建工程" class="header-anchor">#</a> 2.3 创建工程</h3> <p>1.创建并进入一个新目录，win系统直接右键创建文件夹即可，工程名随意</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> vuepress-starter <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> vuepress-starter
+</code></pre></div><p>2.使用你喜欢的包管理器进行初始化</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> init <span class="token comment"># npm init</span>
+</code></pre></div><p>3.将 <code>VuePress</code>安装为本地依赖（局部安装）</p> <p>我们已经不再推荐全局安装 <code>VuePress</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> -D vuepress <span class="token comment"># npm install -D vuepress</span>
+</code></pre></div><p>4.创建你的第一篇文档</p> <p>在创建第一篇文档的时候，有必要梳理下<code>vuepress</code>的文件结构</p> <div class="language-css extra-class"><pre class="language-css"><code>.
+├── docs
+│   ├── .vuepress
+│   │   ├── public
+│   │   └── config.js
+│   │ 
+│   └── README.md
+│ 
+└── package.json
+</code></pre></div><p><code>docs</code>是入口，名字不可替代（请勿自定义）</p> <p><code>package.json</code> 初始化后生成的（即npm init）</p> <p>上述名字均不可更改，请确保项目下文件夹名一致</p> <p>win系统用户可通过正常界面操作</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> docs <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> docs/README.md
+</code></pre></div><p><code>/docs/README.md</code> 该文件就是你项目生成后打开的第一个页面。</p> <p>5.在 <code>package.json</code> 中添加一些 <a href="https://classic.yarnpkg.com/zh-Hans/docs/package-json#toc-scripts" target="_blank" rel="noopener noreferrer">scripts<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>这一步骤是可选的，但我们推荐你完成它。在下文中，我们会默认这些 scripts 已经被添加。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>6.在本地启动服务器</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> docs:dev <span class="token comment"># npm run docs:dev</span>
+</code></pre></div><p><code>VuePress</code> 会在 <a href="http://localhost:8080/" target="_blank" rel="noopener noreferrer">http://localhost:8080<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 启动一个热重载的开发服务器。</p> <p>那么本地的工作你已经完成了，可以看到基本框架已经搭建好了！</p> <h3 id="_2-4-部署到xxx-github-io"><a href="#_2-4-部署到xxx-github-io" class="header-anchor">#</a> 2.4 部署到xxx.github.io</h3> <h4 id="_2-4-0-dev-和-build的个人理解"><a href="#_2-4-0-dev-和-build的个人理解" class="header-anchor">#</a> 2.4.0 dev 和 build的个人理解</h4> <p>dev  模式下就会监听文件变化并编译，更改内容在 <a href="http://localhost:8080/" target="_blank" rel="noopener noreferrer">http://localhost:8080<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 可以实时看到效果</p> <p>build 模式是发布时使用，将发布生成的文件包上传到github使用，该使用会在后续的自动脚本中用到</p> <h4 id="_2-4-1-package-json配置"><a href="#_2-4-1-package-json配置" class="header-anchor">#</a> 2.4.1 package.json配置</h4> <p>目录: <code>/package.json</code></p> <div class="language- extra-class"><pre class="language-text"><code>vuepressBlogDemo
+├─── docs
+│   ├── README.md
+│   └── .vuepress
+│       ├── public
+│       └── config.js
+└── package.json
+└── deploy-gh.sh
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;deploy-gh&quot;</span><span class="token operator">:</span> <span class="token string">&quot;deploy-gh.sh&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p><code>deploy-gh</code> 为自动化脚本，可以理解为你在<code>vuepressBlogDemo</code>项目文件夹下执行<code>npm run deploy-gh</code>脚本后，该脚本自动地进入到指定文件夹，并且执行一系列git命令，将你的网页托管到远程仓库。</p> <h4 id="_2-4-2-deploy-gh-sh-配置"><a href="#_2-4-2-deploy-gh-sh-配置" class="header-anchor">#</a> 2.4.2 deploy-gh.sh 配置</h4> <p>新建脚本 <code>/deploy-gh.sh</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> docs/.vuepress/dist
+
+<span class="token comment"># 如果是发布到自定义域名</span>
+<span class="token comment"># echo 'www.example.com' &gt; CNAME</span>
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git master</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;REPO&gt;.git master:gh-pages</span>
+
+<span class="token comment"># 把上面的 &lt;USERNAME&gt; 换成你自己的 Github 用户名，&lt;REPO&gt; 换成仓库名，比如我这里就是：</span>
+<span class="token function">git</span> push -f git@github.com:AssistantLiu/vuepressblog.git master:gh-pages
+
+<span class="token builtin class-name">cd</span> -
+</code></pre></div><h4 id="_2-4-3-config-js-配置"><a href="#_2-4-3-config-js-配置" class="header-anchor">#</a> 2.4.3 config.js 配置</h4> <p>在 <code>docs/.vuepress/config.js</code> 中配置正确的 <code>base</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">&quot;My Blog&quot;</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">&quot;This is a blog.&quot;</span><span class="token punctuation">,</span>
+  base<span class="token operator">:</span> <span class="token string">'/vuepressblog/'</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>base</code>不可以随意设置，与<code>github</code>仓库名保持一致</p> <p>比如你的仓库名字叫<code>vuepressblog</code>
+base就是<code>/vuepressblog/</code></p> <p><img src="/images/base.png" alt="base"></p> <h3 id="_2-8-执行脚本部署"><a href="#_2-8-执行脚本部署" class="header-anchor">#</a> 2.8 执行脚本部署</h3> <div class="custom-block warning"><p class="custom-block-title">注意：</p> <p>请在项目根目录下运行该命令，否则会找不到deploy-gh文件</p></div> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> deploy-gh <span class="token comment"># 或者：npm run deploy-gh</span>
+</code></pre></div><p>执行脚本部署的时候，会遇到很多的坑，会发现执行了<code>npm run deploy-gh</code> 可是我的远程仓库还是空的</p> <p>如果没有推送上去，先检查本地有没有<code>SSH key</code>。</p> <p>上述版本是通过ssh的方式推送到<code>github</code>，所以要先确保电脑设置了ssh</p> <p>⛳️ ​<a href="#LT5.2">github ssh密钥配置相关内容</a></p> <h2 id="_3-功能配置"><a href="#_3-功能配置" class="header-anchor">#</a> 3 功能配置</h2> <h3 id="_3-1-导航栏链接"><a href="#_3-1-导航栏链接" class="header-anchor">#</a> 3.1 导航栏链接</h3> <p>效果展示：</p> <p><img src="/images/guidebar.png" alt="Guidebar"></p> <p>在<code>docs/.vuepress/config.js</code>中配置<code>themmConfig.nav</code></p> <div class="language-text extra-class"><pre class="language-text"><code>vuepressblog
+ ├── .gitignore
+ ├── deploy-gh.sh
+ ├── docs
+ │   ├── .vuepress
+ │   │   ├── config.js
+ │   │   ├── dist
+ │   │   └── public
+ │   ├── Contact
+ │   │   └── README.md
+ │   ├── Home
+ │   │   ├── README.md
+ │   │   └── Vuepress
+ │   ├── README.md
+ │   ├── Software
+ │   │   ├── README.md
+ │   │   └── sublime
+ │   ├── Study
+ │   │   ├── Autosar
+ │   │   └── README.md
+ │   └── Tutorials
+ │       ├── README.md
+ │       └── windows
+ └── package.json
+</code></pre></div><p>通过 <code>themeConfig.nav</code> 增加一些导航栏链接:</p> <div class="language-js extra-class"><pre class="language-js"><code>  themeConfig<span class="token operator">:</span><span class="token punctuation">{</span>
+  	nav<span class="token operator">:</span><span class="token punctuation">[</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'主页'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'软件'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/Software/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'教程'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/Tutorials/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'学习'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/Study/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'联系'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/Contact/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  		  <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'CSDN'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://blog.csdn.net/qq_33704787'</span> <span class="token punctuation">}</span>
+  	<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-2-定制侧边栏配置"><a href="#_3-2-定制侧边栏配置" class="header-anchor">#</a> 3.2 定制侧边栏配置</h3> <p>如果想为不同的界面配置不同的侧边栏，那么你的目录结构需要遵从以下结构</p> <div class="language-text extra-class"><pre class="language-text"><code>.
+├─ README.md
+├─ contact.md
+├─ about.md
+├─ foo/
+│  ├─ README.md
+│  ├─ one.md
+│  └─ two.md
+└─ bar/
+   ├─ README.md
+   ├─ three.md
+   └─ four.md
+</code></pre></div><p>接着，遵循以下的侧边栏配置：</p> <div class="language-tex extra-class"><pre class="language-tex"><code>vuepressblog
+ ├── .gitignore
+ ├── deploy-gh.sh
+ ├── docs
+ │   ├── .vuepress
+ │   │   ├── config.js
+ │   │   ├── dist
+ │   │   └── public
+ │   ├── Contact
+ │   │   └── README.md
+ │   ├── Home
+ │   │   ├── README.md
+ │   │   └── Vuepress
+ │   ├── README.md
+ │   ├── Software
+ │   │   ├── README.md
+ │   │   └── sublime
+ │   ├── Study
+ │   │   ├── Autosar
+ │   │   └── README.md
+ │   └── Tutorials
+ │       ├── README.md
+ │       └── windows
+ └── package.json
+</code></pre></div><p>在<code>docs/.vuepress/config.js</code>中配置<code>themmConfig.sidebar</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig: <span class="token punctuation">{</span>
+    sidebar: <span class="token punctuation">{</span>
+      <span class="token string">'/foo/'</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span>,     /* /foo/ */
+        <span class="token string">'one'</span>,  /* /foo/one.html */
+        <span class="token string">'two'</span>   /* /foo/two.html */
+      <span class="token punctuation">]</span>,
+
+      <span class="token string">'/bar/'</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span>,      /* /bar/ */
+        <span class="token string">'three'</span>, /* /bar/three.html */
+        <span class="token string">'four'</span>   /* /bar/four.html */
+      <span class="token punctuation">]</span>,
+
+      // fallback
+      <span class="token string">'/'</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span>,        /* / */
+        <span class="token string">'contact'</span>, /* /contact.html */
+        <span class="token string">'about'</span>    /* /about.html */
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-3-最后更新时间"><a href="#_3-3-最后更新时间" class="header-anchor">#</a> 3.3 最后更新时间</h3> <p>在<code>docs/.vuepress/config.js</code>中配置<code>themmConfig.lastUpdated</code> `</p> <div class="language-sh extra-class"><pre class="language-sh"><code>module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig: <span class="token punctuation">{</span>
+    lastUpdated: <span class="token string">'Last Updated'</span>, // string <span class="token operator">|</span> boolean
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>选项来获取每个文件最后一次 <code>git</code> 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：</p> <p>这里要注意的是，只有将文件提交到git后才会显示最后更新时间。</p> <h3 id="_3-4-侧边栏显示层级"><a href="#_3-4-侧边栏显示层级" class="header-anchor">#</a> 3.4 侧边栏显示层级</h3> <p>在<code>docs/.vuepress/config.js</code>中配置<code>themmConfig.sidebarDepth</code> `</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebarDepth<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">,</span>   <span class="token comment">// 默认 1 提取到 h2，0 为禁用，2 为 h2，h3</span>
+    displayAllHeaders<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 默认值：false 侧边栏只会显示由当前活动页面的标题组成的链接</span>
+    activeHeaderLinks<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 默认值：true 滚动时通过 hash 高亮侧边栏标题</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这里的层级可以理解为md文件的目录层级，会在左边侧边栏显示的标题导航</p> <h3 id="_3-5-语言配置"><a href="#_3-5-语言配置" class="header-anchor">#</a> 3.5 语言配置</h3> <p>在<code>docs/.vuepress/config.js</code>中配置<code>locales</code> `</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token comment">// 语言配置</span>
+  locales<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 键名是该语言所属的子路径</span>
+    <span class="token comment">// 作为特例，默认语言可以使用 '/' 作为其路径。</span>
+    <span class="token string">'/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      lang<span class="token operator">:</span> <span class="token string">'zh-CN'</span><span class="token punctuation">,</span> <span class="token comment">// 将会被设置为 &lt;html&gt; 的 lang 属性</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-6-head标签logo"><a href="#_3-6-head标签logo" class="header-anchor">#</a> 3.6 Head标签logo</h3> <p>在<code>docs/.vuepress/config.js</code>中配置<code>head</code></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// head 标签中的额外内容</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/images/mail.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token comment">// 这个是标签页 logo</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-7-git仓库和编辑链接"><a href="#_3-7-git仓库和编辑链接" class="header-anchor">#</a> 3.7 Git仓库和编辑链接</h3> <p>在<code>docs/.vuepress/config.js</code>中配置<code>themeConfig.repo</code> <code>themeConfig.repoLabel</code> <code>themeConfig.editLinks</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+        repo<span class="token operator">:</span> <span class="token string">'username/repo'</span><span class="token punctuation">,</span> <span class="token comment">// 你的仓库</span>
+        repoLabel<span class="token operator">:</span> <span class="token string">'GitHub'</span><span class="token punctuation">,</span> <span class="token comment">// 导航栏上的文本</span>
+        editLinks<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 默认为 &quot;Edit this page&quot;</span>
+        editLinkText<span class="token operator">:</span> <span class="token string">'编辑此页面'</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-8-代码块显示行号"><a href="#_3-8-代码块显示行号" class="header-anchor">#</a> 3.8 代码块显示行号</h3> <p>在<code>docs/.vuepress/config.js</code>中配置<code>markdown</code></p> <div class="language- extra-class"><pre class="language-text"><code> markdown: {
+    lineNumbers: true // 代码块显示行号
+  },
+</code></pre></div><h3 id="_3-9-首页部署"><a href="#_3-9-首页部署" class="header-anchor">#</a> 3.9 首页部署</h3> <p>在<code>docs/README.md</code> 中配置 <code>README.md</code></p> <div class="language-text extra-class"><pre class="language-text"><code>vuepressblog
+ ├── .gitignore
+ ├── deploy-gh.sh
+ ├── docs
+ │   ├── .vuepress
+ │   │   ├── config.js
+ │   │   ├── dist
+ │   │   └── public
+ │   ├── Contact
+ │   │   └── README.md
+ │   ├── Home
+ │   │   ├── README.md
+ │   │   └── Vuepress
+ │   ├── README.md
+ │   ├── Software
+ │   │   ├── README.md
+ │   │   └── sublime
+ │   ├── Study
+ │   │   ├── Autosar
+ │   │   └── README.md
+ │   └── Tutorials
+ │       ├── README.md
+ │       └── windows
+ └── package.json
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">YAML</p> <p>README.md文件中用到了 🔗 <a href="https://www.runoob.com/w3cnote/yaml-intro.html" target="_blank" rel="noopener noreferrer">YAML<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，具体可以去学习如何编写</p></div> <p><code>/docs/README.md</code> 内容：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
+home: true
+heroImage: /images/logo.png
+heroText: 大蘑菇中文文档
+tagline: 学习原来如此简单！
+actionText: 开始学习→
+actionLink: /Home/
+features:
+<span class="token list punctuation">-</span> title: 快速上手
+  details: 如何快速构建属于自己的Vuepress文档类静态网站
+<span class="token list punctuation">-</span> title: 环境搭建
+  details: Git、Yarn、NodeJs、Python、C++、utools等
+<span class="token list punctuation">-</span> title: 软件推荐
+  details: 好用的，好玩的，快速办公，做职场精英
+<span class="token title important">footer: MIT Licensed | Copyright © 2020-present Damogu
+<span class="token punctuation">---</span></span>
+
+
+
+:book:     There is no royal road to learning.
+
+:::tip 提示
+this is a tip
+:::
+
+:::warning 注意
+this is a warning
+:::
+
+:::danger 警告
+this is a danger
+:::
+
+
+
+<span class="token code"><span class="token punctuation">```</span><span class="token code-language">javascript</span>
+<span class="token code-block language-javascript"><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello Damogu'</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></span>
+<span class="token punctuation">```</span></span>
+</code></pre></div><p>首页必须设置 home 为 true。默认样式与官方文档首页一致。</p> <h2 id="_4-makedown相关语法学习"><a href="#_4-makedown相关语法学习" class="header-anchor">#</a> 4 Makedown相关语法学习</h2> <ul><li>工具选择</li></ul> <ol><li><code>markdown2</code> 用了几次，非常不喜欢编写界面，行间距太大而且不太友好</li> <li><code>Typora</code>   多平台的话选择<code>Typota</code></li> <li><code>ulysess</code> <code>mweb</code>   mac os平台用，收费</li> <li><code>sublime text</code> <code>Vscode</code> 能记住的代码的用，专业人士用</li> <li><code>CSDN</code> <code>简书</code> <code>有道云笔记</code> 等都可以选择</li></ol> <ul><li>网页推荐</li></ul> <p>🔗 <a href="https://blog.csdn.net/cc007cc009/article/details/106959345" target="_blank" rel="noopener noreferrer">csdn关于工具选择<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_4-1-markdown2安装"><a href="#_4-1-markdown2安装" class="header-anchor">#</a> 4.1 Markdown2安装</h3> <p>🔗 <a href="https://markdownpad.com/" target="_blank" rel="noopener noreferrer">Markdown官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>win系统上需要安装插件<a href="https://pan.baidu.com/s/1qY7LKba" target="_blank" rel="noopener noreferrer">awesomium_v1.6.6_sdk_win.exe<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，否则会报错</p> <div class="language-text extra-class"><pre class="language-text"><code>Email address :Soar360@live.com
+License key :GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==
+</code></pre></div><p>如果担心看不懂：🔗 <a href="https://www.jianshu.com/p/1745a7f53404" target="_blank" rel="noopener noreferrer">简书教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_4-2-typota"><a href="#_4-2-typota" class="header-anchor">#</a> 4.2 Typota</h3> <p>懒人首选，傻瓜式操作，安装后即可编辑</p> <p>如果要让工具来选择的话，我更推荐的是🔗<a href="https://www.typora.io/" target="_blank" rel="noopener noreferrer">Typota<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>这个软件来编写<code>makedown</code>文本</p> <div class="custom-block tip"><p class="custom-block-title">快捷键</p> <p>Ctrl + / 切换到源代码模式</p></div> <p>推荐搭配🔗<a href="https://u.tools/" target="_blank" rel="noopener noreferrer">utools<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>工具的<code>QuickTypota</code>插件</p> <h3 id="_4-3-网页版"><a href="#_4-3-网页版" class="header-anchor">#</a> 4.3 网页版</h3> <p>🔗<a href="https://www.jianshu.com/" target="_blank" rel="noopener noreferrer">简书<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>🔗<a href="https://www.csdn.net/" target="_blank" rel="noopener noreferrer">CSDN<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>🔗<a href="http://note.youdao.com/" target="_blank" rel="noopener noreferrer">有道云笔记<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_4-4-语法教程"><a href="#_4-4-语法教程" class="header-anchor">#</a> 4.4 语法教程</h3> <p>🔗<a href="https://www.jianshu.com/p/de9c98bba332" target="_blank" rel="noopener noreferrer">简书语法教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h4 id="_4-4-1-页内跳转"><a href="#_4-4-1-页内跳转" class="header-anchor">#</a> 4.4.1 页内跳转</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token number">1</span>. 先定义一个锚<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+                    <span class="token operator">&lt;</span>span <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">&quot;jump&quot;</span><span class="token operator">&gt;</span>Hello World<span class="token operator">&lt;</span>/span<span class="token operator">&gt;</span>
+<span class="token number">2</span>. 然后使用markdown的语法:
+                    <span class="token punctuation">[</span>跳转<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token comment">#jump)</span>
+</code></pre></div><h4 id="_4-4-2-链接图片"><a href="#_4-4-2-链接图片" class="header-anchor">#</a> 4.4.2 链接图片</h4> <p><code>vuepress</code>静态资源存放在<code>/docs/.vuepress/public</code></p> <p><code>vuepress</code>图片资源可以存在在<code>/docs/.vuepress/public/images</code></p> <p><code>images</code>可以自定义，但是<code>public</code>名字是固定的</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token operator">!</span><span class="token punctuation">[</span>权限<span class="token punctuation">]</span><span class="token punctuation">(</span>/images/权限.gif<span class="token punctuation">)</span>
+</code></pre></div><h4 id="_4-4-3-链接外部网址"><a href="#_4-4-3-链接外部网址" class="header-anchor">#</a> 4.4.3 链接外部网址</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token punctuation">[</span>百度<span class="token punctuation">]</span><span class="token punctuation">(</span>https://www.baidu.com/<span class="token punctuation">)</span>
+</code></pre></div><h4 id="_4-4-4-链接项目内文件"><a href="#_4-4-4-链接项目内文件" class="header-anchor">#</a> 4.4.4 链接项目内文件</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token punctuation">[</span>工程内文件<span class="token punctuation">]</span><span class="token punctuation">(</span>/Software/sublime/SublimeText3.md<span class="token punctuation">)</span>
+</code></pre></div><p><a href="/vuepressblog/Software/sublime/SublimeText3.html">工程内文件</a></p> <h4 id="_4-4-5-emoji大全"><a href="#_4-4-5-emoji大全" class="header-anchor">#</a> 4.4.5 emoji大全</h4> <p>🔗<a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener noreferrer">emoji大全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-sh extra-class"><pre class="language-sh"><code>:link:
+:tada:
+</code></pre></div><h4 id="_4-4-6-自定义容器"><a href="#_4-4-6-自定义容器" class="header-anchor">#</a> 4.4.6 自定义容器</h4> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>tip效果展示</p></div> <div class="language-sh extra-class"><pre class="language-sh"><code>::: tip 提示
+this is a tip
+:::
+
+::: warning 注意
+this is a tip
+:::
+
+::: danger 警告
+this is a tip
+:::
+</code></pre></div><h2 id="_5-git相关问题"><a href="#_5-git相关问题" class="header-anchor">#</a> 5 Git相关问题</h2> <p>🙍‍♂<a href="https://gitee.com/liuwanqiang/git-notes.git" target="_blank" rel="noopener noreferrer">some notes about git of liuwanqiang<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_5-1-工程托管配置"><a href="#_5-1-工程托管配置" class="header-anchor">#</a> 5.1 工程托管配置</h3> <h4 id="_5-1-1-gitignore配置"><a href="#_5-1-1-gitignore配置" class="header-anchor">#</a> 5.1.1 .gitignore配置</h4> <p>在项目根目录新建文件<code>.gitignore</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>node_modules/
+docs/.vuepress/theme/
+docs/.vuepress/dist/
+</code></pre></div><p><code>node_modules</code>为<code>vuepress</code>依赖包，当项目上传到github肯定要过滤掉</p> <p>让git 忽略<code>node_modules</code>下的所有文件</p> <p><code>dist</code>文件是<code>npm run docs:dev</code>生成的内容，该文件夹是托管在github.io上用来显示页面</p> <h3 id="_5-2-github-ssh密钥配置"><a href="#_5-2-github-ssh密钥配置" class="header-anchor">#</a> 5.2 github ssh密钥配置<span id="LT5.2"></span></h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;REPO&gt;.git master:gh-pages</span>
+
+<span class="token comment"># 把上面的 &lt;USERNAME&gt; 换成你自己的 Github 用户名，&lt;REPO&gt; 换成仓库名，比如我这里就是：</span>
+<span class="token function">git</span> push -f git@github.com:AssistantLiu/vuepressblog.git master:gh-pages
+</code></pre></div><p>在配置<code>deploy-gh.sh</code>自动脚本的时候有这么一段代码，这里有一个小细节就是，push方式是通过ssh</p> <p>所以我们要正确配置ssh，才能将代码提交到仓库</p> <h4 id="_5-2-1-配置ssh"><a href="#_5-2-1-配置ssh" class="header-anchor">#</a> 5.2.1 配置ssh</h4> <p><code>id_rsa</code> 存放在个人电脑上</p> <p><code>id_rsa.pub</code> 配置在<code>github</code>上</p> <div class="language-sh extra-class"><pre class="language-sh"><code>Github   -----ssh
+
+<span class="token comment">#切换文件夹：</span>
+<span class="token builtin class-name">cd</span> ~/.ssh/
+
+<span class="token comment">#如果没有的话则：</span>
+<span class="token function">mkdir</span> <span class="token punctuation">..</span>/.ssh
+
+<span class="token comment">#配置信息：</span>
+<span class="token function">git</span> config --global user.name <span class="token string">&quot;Damogu&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;919740574@qq.com&quot;</span>
+
+
+<span class="token comment">#生成ssh密钥：</span>
+ssh-keygen -t rsa -C <span class="token string">&quot;919740574@qq.com&quot;</span>
+<span class="token comment">#    路径选择 : 使用该命令之后, 会出现提示选择ssh-key生成路径, 这里直接点回车默认即可, 生成的ssh-key在默认路径中;</span>
+<span class="token comment">#    密码确认 : 这里我们不使用密码进行登录, 用密码太麻烦;就一路回车下去</span>
+
+<span class="token comment">#公钥私钥位置：</span>
+<span class="token comment">#例：C:/Users/Han Dong/.ssh 目录</span>
+<span class="token comment">#	1&gt; id_rsa</span>
+<span class="token comment">#	2&gt; id_rsa.pub  公钥（内容加入到github）</span>
+
+<span class="token comment">#验证是否配置成功：</span>
+<span class="token function">ssh</span> -T git@github.com
+
+<span class="token comment">#&lt;正常情况&gt;</span>
+<span class="token comment">#	然后出现如下信息：</span>
+<span class="token comment">#	Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.</span>
+	 
+<span class="token comment">#	Hi AssistantLiu! You've successfully authenticated, but GitHub does not provide shell access.</span>
+<span class="token comment">#	验证时可能让你输入YES，当出现以上信息时，说明配置成功，可以连接上GitHub;</span>
+
+<span class="token comment">#&lt;异常情况&gt;</span>
+<span class="token comment">#	ssh: Could not resolve hostname github.com: \262\273\326\252\265\300\325\342\321\371\265\304\326\367\273\372\241\243</span>
+<span class="token comment">#	出现该问题原因是，因为电脑使用的是代理，公司内网，无法尚未，通过代理另一台电脑实现联网。</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepressblog/assets/js/app.cc56b176.js" defer></script><script src="/vuepressblog/assets/js/2.4bc8db0f.js" defer></script><script src="/vuepressblog/assets/js/9.51c9d6b2.js" defer></script>
+  </body>
+</html>
